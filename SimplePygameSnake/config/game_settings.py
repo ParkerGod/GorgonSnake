@@ -1,0 +1,44 @@
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+SCREEN_TITLE = "贪吃蛇游戏"
+
+SNAKE_SPEED = 10
+SNAKE_SIZE = 20
+SNAKE_INITIAL_LENGTH = 3
+
+FOOD_SIZE = 20
+
+GAME_FPS = 60
+
+GRID_SIZE = 20
+
+DEFAULT_BACKGROUND_COLOR = (0, 0, 0)
+DEFAULT_SNAKE_COLOR = (0, 255, 0)
+DEFAULT_FOOD_COLOR = (255, 0, 0)
+
+WHITE_COLOR = (255, 255, 255)
+BLACK_COLOR = (0, 0, 0)
+GRAY_COLOR = (128, 128, 128)
+
+DB_PATH = os.path.join(BASE_DIR, "data", "snake_game.db")
+SAVE_DIR = os.path.join(BASE_DIR, "data", "saves")
+SAVE_FILE = os.path.join(SAVE_DIR, "savedata_1.json")
+CONFIG_FILE = os.path.join(BASE_DIR, "config", "user_settings.json")
+
+MENU_FONT_SIZE = 36
+SCORE_FONT_SIZE = 24
+
+KEY_UP = "UP"
+KEY_DOWN = "DOWN"
+KEY_LEFT = "LEFT"
+KEY_RIGHT = "RIGHT"
+
+GAME_STATE_MENU = "MENU"
+GAME_STATE_PLAYING = "PLAYING"
+GAME_STATE_PAUSED = "PAUSED"
+GAME_STATE_GAME_OVER = "GAME_OVER"
+GAME_STATE_SETTINGS = "SETTINGS"
